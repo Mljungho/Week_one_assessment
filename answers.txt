@@ -1,0 +1,41 @@
+Q1 
+
+var = "variable"
+
+'String'
+integer (1)
+float (1.0)
+:symbol
+array
+object {}
+Boolean (True/false)
+
+-------------
+
+Q2
+
+2.5.1 :001 > car = {wheels: 4, max_speed: 75, color: "blue"}
+ => {:wheels=>4, :max_speed=>75, :color=>"blue"} 
+2.5.1 :002 > car
+ => {:wheels=>4, :max_speed=>75, :color=>"blue"} 
+2.5.1 :003 > car2 = {wheels: 4, max_speed:80, color: "red"}
+ => {:wheels=>4, :max_speed=>80, :color=>"red"} 
+2.5.1 :004 > array = []
+ => [] 
+2.5.1 :005 > array >> car
+Traceback (most recent call last):
+        2: from /usr/share/rvm/rubies/ruby-2.5.1/bin/irb:11:in `<main>'
+        1: from (irb):5
+NoMethodError (undefined method `>>' for []:Array)
+2.5.1 :006 > array.push car
+ => [{:wheels=>4, :max_speed=>75, :color=>"blue"}] 
+2.5.1 :007 > array.push car2
+ => [{:wheels=>4, :max_speed=>75, :color=>"blue"}, {:wheels=>4, :max_speed=>80, :color=>"red"}] 
+2.5.1 :008 > array
+ => [{:wheels=>4, :max_speed=>75, :color=>"blue"}, {:wheels=>4, :max_speed=>80, :color=>"red"}] 
+2.5.1 :009 > array[1]
+ => {:wheels=>4, :max_speed=>80, :color=>"red"} 
+2.5.1 :010 > array[1][:color]
+ => "red" 
+
+ --------
