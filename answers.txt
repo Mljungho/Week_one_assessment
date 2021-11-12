@@ -6,7 +6,7 @@ var = "variable"
 integer (1)
 float (1.0)
 :symbol
-array
+array []
 object {}
 Boolean (True/false)
 
@@ -39,3 +39,24 @@ NoMethodError (undefined method `>>' for []:Array)
  => "red" 
 
  --------
+
+ Q3 
+
+ 2.5.1 :001 > require "./car.rb"
+ => true 
+2.5.1 :002 > AstonMartin = Car.new
+ => #<Car:0x000055bbfd435af8 @color="red", @wheels=4> 
+2.5.1 :003 > AstonMartin.instance_variable_set(:@color, "Green") 
+ => "Green" 
+2.5.1 :004 > AstonMartin
+ => #<Car:0x000055bbfd435af8 @color="Green", @wheels=4> 
+
+
+-------------
+
+ Q4
+
+• 
+•
+•
+•
