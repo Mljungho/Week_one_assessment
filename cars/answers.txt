@@ -56,7 +56,8 @@ NoMethodError (undefined method `>>' for []:Array)
 
  Q4
 
-• 
-•
-•
-•
+• rspec initialized in the folder.
+• We write the test first in order to set up the "scope" of the logic. it helps us to mentally build 
+the project and later allows us to incrementally test our code piece by piece (unit test).
+• Added painting method 
+• added instance double for colour wheels and driver.
