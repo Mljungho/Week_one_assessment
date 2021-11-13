@@ -1,6 +1,6 @@
 class Car 
 
-    attr_accessor :color
+    attr_accessor :color, :wheels
 
     def initialize(attrs = {})
         @color = "red"
